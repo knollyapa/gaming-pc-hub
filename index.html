@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Gaming, PC hardware, builds and gaming technology.">
+  <title>Gaming PC Hub | Level Up Your Setup</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #090d14;
+      --panel: #111925;
+      --blue: #39a7ff;
+      --text: #f3f7ff;
+      --muted: #a4b1c4;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding: 22px 8%;
+      border-bottom: 1px solid #202b3a;
+    }
+
+    .logo {
+      color: var(--blue);
+      font-size: 1.25rem;
+      font-weight: 800;
+    }
+
+    nav {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+
+    nav a:hover {
+      color: var(--blue);
+    }
+
+    .hero {
+      padding: 90px 8%;
+      background:
+        radial-gradient(ellipse at 80% 20%, #12345a 0%, transparent 45%),
+        var(--bg);
+    }
+
+    .tag {
+      color: var(--blue);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 0.75rem;
+      font-weight: bold;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      line-height: 1.05;
+      margin: 20px 0;
+      max-width: 750px;
+    }
+
+    h1 span {
+      color: var(--blue);
+    }
+
+    .hero p {
+      max-width: 580px;
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      background: var(--blue);
+      color: #06101c;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    section {
+      padding: 65px 8%;
+      scroll-margin-top: 20px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin: 8px 0 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid #253246;
+      padding: 24px;
+      border-radius: 12px;
+    }
+
+    .card .emoji {
+      font-size: 2rem;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      margin-bottom: 8px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+
+    .build {
+      border-left: 3px solid var(--blue);
+    }
+
+    .about {
+      background: #0d1420;
+    }
+
+    footer {
+      padding: 28px 8%;
+      text-align: center;
+      color: var(--muted);
+      border-top: 1px solid #202b3a;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .hero {
+        padding-top: 65px;
+        padding-bottom: 65px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="logo">GAMING<span>PC</span> HUB</div>
+
+    <nav aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#hardware">Hardware</a>
+      <a href="#builds">PC Builds</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="tag">Gaming · Hardware · Technology</div>
+
+      <h1>BUILD SMART.<br>PLAY <span>HARDER.</span></h1>
+
+      <p>
+        Your hub for PC hardware, gaming setups, build ideas
+        and the technology powering your next level.
+      </p>
+
+      <a class="button" href="#hardware">Explore Hardware →</a>
+    </section>
+
+    <section id="hardware">
+      <div class="tag">Know your gear</div>
+      <h2>Explore PC Hardware</h2>
+      <p class="section-intro">
+        Understand the components that make a gaming PC work.
+      </p>
+
+      <div class="grid">
+        <article class="card">
+          <div class="emoji">🎮</div>
+          <h3>Graphics Cards</h3>
+          <p>Learn about GPUs, graphics performance and gaming resolution.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">⚡</div>
+          <h3>Processors</h3>
+          <p>Explore CPU cores, clock speeds and gaming performance.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">🧠</div>
+          <h3>RAM & Memory</h3>
+          <p>Understand memory capacity, speed and multitasking.</p>
+        </article>
+
+        <article class="card">
+          <div class="emoji">💾</div>
+          <h3>Storage</h3>
+          <p>Compare SSDs and HDDs for games, files and applications.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="builds">
+      <div class="tag">Plan your setup</div>
+      <h2>PC Build Ideas</h2>
+      <p class="section-intro">
+        Start with your needs and budget, then choose compatible parts.
+      </p>
+
+      <div class="grid">
+        <article class="card build">
+          <h3>Starter Setup</h3>
+          <p>For everyday computing, learning and lightweight gaming.</p>
+        </article>
+
+        <article class="card build">
+          <h3>1080p Gaming</h3>
+          <p>For smooth gameplay with carefully selected components.</p>
+        </article>
+
+        <article class="card build">
+          <h3>Performance Setup</h3>
+          <p>For demanding games, streaming and creative workloads.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="tag">Welcome to the hub</div>
+      <h2>Built for Curious Gamers</h2>
+      <p class="section-intro">
+        Gaming PC Hub is a learning project about computer hardware,
+        gaming technology and smarter PC builds.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © 2026 Gaming PC Hub · Built while learning web development.
+  </footer>
+</body>
+</html>
